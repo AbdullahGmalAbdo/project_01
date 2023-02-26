@@ -1,26 +1,28 @@
-:root{
-  --color-one : #0d6efd;
+:root {
+  --color-one: #0d6efd;
   --dark-color: #19283f;
   --second-color: #33d1cc;
   --thre-color: #ffc400;
-  --four-color:#eff7fa;
+  --four-color: #eff7fa;
 }
 
 
-body{
-  font-family: "Roboto" , sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
   background-color: var(--dark-color);
 
 }
 
 
-.main-title h2{
-  color: var(--second-color);
- }
-.team h2{
+.main-title h2 {
   color: var(--second-color);
 }
-.main-title::after{
+
+.team h2 {
+  color: var(--second-color);
+}
+
+.main-title::after {
   content: "";
   width: 200px;
   height: 2px;
@@ -30,44 +32,50 @@ body{
   left: 50%;
   transform: translate(-50%);
 }
-.navbar{
+
+.navbar {
   border-bottom: 0.1px solid #33d1cc;
 }
 
 .navbar {
   background-color: var(--dark-color);
 }
-.navbar .navbar-nav .nav-link{
+
+.navbar .navbar-nav .nav-link {
   color: whitesmoke;
   transition: .3s all;
 }
 
 .navbar .navbar-nav .nav-link :active,
 .navbar .navbar-nav .nav-link:focus,
-.navbar .navbar-nav .nav-link:hover{
+.navbar .navbar-nav .nav-link:hover {
   color: var(--second-color);
   font-size: 16.2px;
 }
-.search{
+
+.search {
   border-left: 1px solid var(--second-color);
 }
-.search .fa-magnifying-glass{
+
+.search .fa-magnifying-glass {
   color: var(--second-color);
   font-size: 1rem;
 }
-.navbar .navbar-toggler{
+
+.navbar .navbar-toggler {
   color: var(--second-color);
   font-size: 23px;
   border: .1px solid var(--second-color);
 }
-.navbar .navbar-toggler:focus{
+
+.navbar .navbar-toggler:focus {
   box-shadow: none;
 }
 
 /* start landing */
 
 
-.landing{
+.landing {
   background-color: var(--dark-color);
   min-height: calc(100vh - 72px);
   letter-spacing: 2px;
@@ -76,49 +84,59 @@ body{
 /* end landing */
 
 /* start features */
-.features{
+.features {
   background-color: #fefdfd;
 }
+
 .features .icon-holder {
   height: 200px;
 }
-.features .icon-holder svg{
+
+.features .icon-holder svg {
   left: 50%;
   transform: translateX(-50%);
 }
-.features .icon-holder .number{
+
+.features .icon-holder .number {
   font-size: 12rem;
   color: var(--four-color);
 }
-.features .icon-holder .icon{
+
+.features .icon-holder .icon {
   color: var(--thre-color);
 
 }
+
 /* end features */
 
 
 /* start our work */
-.our-work{
+.our-work {
   background-color: var(--four-color);
 }
-.our-work ul li{
+
+.our-work ul li {
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: 0.3s all;
   margin-top: 40px;
   margin-bottom: 100px;
 }
-.our-work ul li .active{
+
+.our-work ul li .active {
   background-color: var(--color-one);
 }
-.our-work ul li:not(.active):hover{
-color: var(--color-one);
+
+.our-work ul li:not(.active):hover {
+  color: var(--color-one);
 }
-.our-work .box{
+
+.our-work .box {
   overflow: hidden;
   position: relative;
 }
-.our-work .box::before{
+
+.our-work .box::before {
   content: attr(data-work);
   position: absolute;
   background-color: #33d1ccbd;
@@ -136,93 +154,115 @@ color: var(--color-one);
   cursor: pointer;
 
 }
-.our-work .box:hover::before{
+
+.our-work .box:hover::before {
   transform: translateX(0%);
 }
+
 /* end our work */
- 
+
 /* start stuff */
 .description {
   max-width: 500px;
 }
-.text p{
+
+.text p {
   width: 70%;
 }
+
 /* end stuff */
 
 /* start team */
-.team{
+.team {
   background-color: var(--four-color);
 }
-.row .box h4{
+
+.row .box h4 {
   background-color: var(--second-color);
 }
+
 /* end team */
+
+
 /* start project */
-.project{
+.project {
   background-color: var(--dark-color);
 }
-.project a{
+
+.project a {
   letter-spacing: 1.5px;
 }
-.project h2{
+
+.project h2 {
   letter-spacing: 1px;
-}
-.project p{
-  letter-spacing: 1px;
-}
-/* end project */
-/* start subscribe */
-.subscribe{
-  background-color:var(--thre-color);
 }
 
-.subscribe input{
+.project p {
+  letter-spacing: 1px;
+}
+
+/* end project */
+/* start subscribe */
+.subscribe {
+  background-color: var(--thre-color);
+}
+
+.subscribe input {
   border: none;
   border-bottom: 2px solid var(--color-one);
   font-size: 17px;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
-.subscribe ::placeholder{
-  color:black;
+
+.subscribe ::placeholder {
+  color: black;
   margin-left: 10px;
   padding-left: 5px;
   font-size: 17px;
 }
+
 /* end subscribe */
+
+
 /* start footer */
-.footer{
+.footer {
   background-color: var(--dark-color);
-  
+
 }
-.footer li{
+
+.footer li {
   font-weight: 500;
 
 }
-.footer p{
+
+.footer p {
   font-weight: 450;
   letter-spacing: 1.2px;
 }
-.footer span{
+
+.footer span {
   color: #33d1cc;
 }
 
-.fa-facebook{
+.fa-facebook {
   color: whitesmoke;
   font-size: 25px;
 }
-.fa-whatsapp{
+
+.fa-whatsapp {
   color: whitesmoke;
   font-size: 25px;
 }
-.fa-linkedin-in{
+
+.fa-linkedin-in {
   color: whitesmoke;
   font-size: 25px;
 }
-.fa-github{
+
+.fa-github {
   color: whitesmoke;
   font-size: 25px;
 }
